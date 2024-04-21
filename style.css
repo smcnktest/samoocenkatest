@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background-color: #5c96ae;
+    background-size: cover;
+}
+
+.game {
+    width: 60%;
+    background-color: #e0eef2;
+    margin: auto;
+    margin-top: 100px;
+    padding: 50px;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.question-block {
+    width: 100%;
+    padding-bottom: 20px;
+    height: fit-content;
+    border-width: 2px;
+    border-bottom-width:2px;
+    border-bottom-color:rgb(144, 187, 230);
+    border-bottom-style: solid;
+}
+
+.greeting-card {
+    min-height: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+.greeting-content {
+    background-color: white;
+    color: black;
+    width: 80%;
+    max-width: 500px;
+    height: 80vh;
+    max-height: 350px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.game-title {
+    background-color: #6196ff;
+    border-radius: 15px 15px 0px 0px;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.game-description {
+    font-size: 25px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.game-result {
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    color: #00b112;
+    text-align: center;
+}
+
+.game-restart {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.restart-text {
+    color: #725411;
+    font-size: 15px;
+}
+
+.question-card {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #d7f0ff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.5)
+}
+
+.question-text {
+    margin: 5px;
+}
+
+.answer-yes {
+    background-color: rgb(81, 255, 162);
+    margin-right: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.5)
+}
+
+.answer-yes:disabled, answer-yes[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.answer-no {
+    background-color: rgb(255, 95, 95);
+    margin-right: 5px;
+    margin-bottom: 0;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.5)
+}
+
+.answer-no:disabled, answer-no[disabled]{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
+
+.answer-idk {
+    background-color: rgb(255, 213, 88);
+    margin-right: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.5)
+}
+
+.answer-idk:disabled, answer-idk[disabled]{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
+
+.greeting {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.finish {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.start-button {
+    margin-top: 30px;
+    width: 70%;
+    height: 50px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: rgb(84, 240, 105);
+    border-radius: 15px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.start-text {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}

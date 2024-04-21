@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Узнай самооценку!</title>
+</head>
+<body>
+<p id="score__now" class="score__now"></p>
+    <section class="game">
+        <div class="question-block">
+            <div class="question-card">1. Мне нравится создавать фантастические проекты.</div><br/>
+            <button class="answer-yes">Да</button>
+            <button class="answer-idk">Трудно сказать</button>
+            <button class="answer-no">Нет</button>
+        </div>
+        <div class="question-block">
+            <div class="question-card">2. Могу представить себе то, чего не бывает на свете.</div><br/>
+            <button class="answer-yes">Да</button>
+            <button class="answer-idk">Трудно сказать</button>
+            <button class="answer-no">Нет</button>
+        </div>
+        <div class="question-block">
+            <div class="question-card">3. Буду участвовать в том деле, которое для меня ново.</div><br/>
+            <button class="answer-yes">Да</button>
+            <button class="answer-idk">Трудно сказать</button>
+            <button class="answer-no">Нет</button>
+        </div>
+        <div class="question-block">
+            <div class="question-card">4. Быстро нахожу решения в трудных ситуациях.</div><br/>
+            <button class="answer-yes">Да</button>
+            <button class="answer-idk">Трудно сказать</button>
+            <button class="answer-no">Нет</button>
+        </div>
+        <div class="question-block">
+            <div class="question-card">5. В основном стараюсь обо всем иметь свое мнение.</div><br/>
+            <button class="answer-yes">Да</button>
+            <button class="answer-idk">Трудно сказать</button>
+            <button class="answer-no">Нет</button>
+        </div>
+        <div class="question-block">
+            <div class="question-card">6. Мне нравится находить причины своих неудач.</div><br/>
+            <button class="answer-yes">Да</button>
+            <button class="answer-idk">Трудно сказать</button>
+            <button class="answer-no">Нет</button>
+        </div>
+        <div class="question-block">
+            <div class="question-card">7. Стараюсь дать оценку поступкам и событиям на основе своих убеждений.</div><br/>
+            <button class="answer-yes">Да</button>
+            <button class="answer-idk">Трудно сказать</button>
+            <button class="answer-no">Нет</button>
+        </div>
+        <div class="question-block">
+            <div class="question-card">8. Могу обосновать: почему мне что-то нравится или не нравится.</div><br/>
+            <button class="answer-yes">Да</button>
+            <button class="answer-idk">Трудно сказать</button>
+            <button class="answer-no">Нет</button>
+        </div>
+        <div class="question-block">
+            <div class="question-card">9. Мне нетрудно в любой задаче выделить главное и второстепенное.</div><br/>
+            <button class="answer-yes">Да</button>
+            <button class="answer-idk">Трудно сказать</button>
+            <button class="answer-no">Нет</button>
+        </div>
+        <div class="question-block">
+            <div class="question-card">10. Убедительно могу доказать правоту.</div><br/>
+            <button class="answer-yes">Да</button>
+            <button class="answer-idk">Трудно сказать</button>
+            <button class="answer-no">Нет</button>
+        </div>
+        <div class="question-block">
+            <div class="question-card">11. Умею сложную задачу разделить на несколько простых.</div><br/>
+            <button class="answer-yes">Да</button>
+            <button class="answer-idk">Трудно сказать</button>
+            <button class="answer-no">Нет</button>
+        </div>
+        <div class="question-block">
+            <div class="question-card">12. У меня часто рождаются интересные идеи.</div><br/>
+            <button class="answer-yes">Да</button>
+            <button class="answer-idk">Трудно сказать</button>
+            <button class="answer-no">Нет</button>
+        </div>
+        <div class="question-block">
+            <div class="question-card">13. Мне интереснее работать творчески, чем по-другому.</div><br/>
+            <button class="answer-yes">Да</button>
+            <button class="answer-idk">Трудно сказать</button>
+            <button class="answer-no">Нет</button>
+        </div>
+        <div class="question-block">
+            <div class="question-card">14. Стремлюсь всегда найти дело, в котором могу проявить творчество.</div><br/>
+            <button class="answer-yes">Да</button>
+            <button class="answer-idk">Трудно сказать</button>
+            <button class="answer-no">Нет</button>
+        </div>
+        <div class="question-block">
+            <div class="question-card">15. Мне нравится организовывать своих товарищей на интересные дела.</div><br/>
+            <button class="answer-yes">Да</button>
+            <button class="answer-idk">Трудно сказать</button>
+            <button class="answer-no">Нет</button>
+        </div>
+        <div class="question-block">
+            <div class="question-card">16. Для меня важно, как оценивают мой труд окружающие.</div><br/>
+            <button class="answer-yes">Да</button>
+            <button class="answer-idk">Трудно сказать</button>
+            <button class="answer-no">Нет</button>
+        </div>
+    </section>
+    <div id="greeting" class="greeting">
+        <div class="greeting-card">
+            <div class="greeting-content">
+                <div class="game-title">Узнай свою самооценку!</div>
+                <div class="game-description">Тебе нужно ответить на 16 вопросов, чтобы вычислить уровень своей самооценки.</div>
+                <button class="start-button"><a href="#" class="start-text" id="start">НАЧАТЬ</a></button>
+            </div>
+        </div>
+    </div>
+    <div id="finish" class="finish">
+        <div class="greeting-card">
+            <div class="greeting-content">
+                <div class="game-title">
+                    Поздравляем! Тест окончен!
+                </div>
+                <div class="game-description">
+                    Уровень вашей самооценки: <p class="game-result" id="result">высокий</p>
+                </div>
+                <div class="game-restart">
+                    <a href="#" class="restart-text" id="restart" onClick="window.location.reload()">Попробовать еще раз...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
